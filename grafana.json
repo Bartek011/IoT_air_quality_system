@@ -1,4 +1,4 @@
-"annotations": {
+{"annotations": {
     "list": [
       {
         "builtIn": 1,
@@ -43,7 +43,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "description": "",
       "fieldConfig": {
@@ -155,7 +155,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"tempBMP\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield()",
           "refId": "A"
@@ -167,7 +167,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -219,7 +219,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"tempBMP\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -232,7 +232,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -284,7 +284,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"tempBMP\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -297,7 +297,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -349,7 +349,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"tempBMP\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -375,7 +375,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -458,7 +458,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"humDHT\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -470,7 +470,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -524,7 +524,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"humDHT\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -537,7 +537,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -592,7 +592,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"humDHT\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -605,7 +605,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -658,7 +658,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"humDHT\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -684,7 +684,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "description": "",
       "fieldConfig": {
@@ -797,7 +797,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pressBMP\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield()",
           "refId": "A"
@@ -809,7 +809,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -862,7 +862,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pressBMP\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -875,7 +875,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -928,7 +928,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pressBMP\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -941,7 +941,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -994,7 +994,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pressBMP\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"max\")",
           "refId": "A"
@@ -1020,7 +1020,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "description": "",
       "fieldConfig": {
@@ -1145,7 +1145,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"vocSGP40\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield()",
           "refId": "A"
@@ -1157,7 +1157,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -1352,7 +1352,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -1434,7 +1434,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm1\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -1447,7 +1447,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -1495,7 +1495,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm1\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -1507,7 +1507,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -1555,7 +1555,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm1\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -1568,7 +1568,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "description": "Średnie dobowe dopuszczalne stężenie PM2,5 wynosi 25  μg/m3.",
       "fieldConfig": {
@@ -1656,7 +1656,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm2.5\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -1669,7 +1669,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -1721,7 +1721,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm2.5\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -1734,7 +1734,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -1782,7 +1782,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm2.5\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -1795,7 +1795,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "description": "Średnie dobowe dopuszczalne stężenie PM10 wynosi 50  μg/m3.",
       "fieldConfig": {
@@ -1883,7 +1883,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm10\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -1896,7 +1896,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -1948,7 +1948,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm10\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
@@ -1961,7 +1961,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "7dWxV8zgz"
+        "uid": "ae9o7517mavi8b"
       },
       "fieldConfig": {
         "defaults": {
@@ -2009,7 +2009,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "7dWxV8zgz"
+            "uid": "ae9o7517mavi8b"
           },
           "query": "from(bucket: \"Temperatura\")\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"AirQuality\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"pm10\")\r\n  |> filter(fn: (r) => r[\"device\"] == \"ESP8266\")\r\n  |> aggregateWindow(every: v.windowPeriod, fn: max, createEmpty: false)\r\n  |> yield(name: \"mean\")",
           "refId": "A"
