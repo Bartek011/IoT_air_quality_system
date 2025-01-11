@@ -1,4 +1,4 @@
-e#include <Adafruit_Sensor.h>
+#include <Adafruit_Sensor.h>
 #include <DHT_U.h>
 #include <Wire.h>
 #include <Adafruit_BMP280.h>
@@ -26,15 +26,15 @@ e#include <Adafruit_Sensor.h>
 
 #define MILLIS_IN_DAY 86400000
 
-#define WIFI_SSID "Redmi 9C NFC" // WiFi AP SSID
-#define WIFI_PASSWORD "skomplikowanehaslo321" // WiFi password
+#define WIFI_SSID "your_SSID" // WiFi AP SSID
+#define WIFI_PASSWORD "your_PASSWORD" // WiFi password
 
-#define INFLUXDB_URL "https://europe-west1-1.gcp.cloud2.influxdata.com"
-#define INFLUXDB_TOKEN "9-iOqK17HnnCQoDO7ndsywITnfdPe9mB990lTq-njPlGA2NfS32QDUobs8eRvIyVcIYTopFcEukUieBq8KeFSQ=="
-#define INFLUXDB_ORG "37a49885c159024b"
+#define INFLUXDB_URL "https://eu-central-1-1.aws.cloud2.influxdata.com"
+#define INFLUXDB_TOKEN "your_TOKEN"
+#define INFLUXDB_ORG "ffe702b83d51d588"
 #define INFLUXDB_BUCKET "Temperatura"
 
-#define TZ_INFO "CET-1CEST,M3.5.0,M10.5.0/3" // Zdefiniowanie strefy czasowej dla Warszawy
+#define TZ_INFO "UTC1" // Zdefiniowanie strefy czasowej dla Warszawy
 
 
 ESP8266WiFiMulti wifiMulti;
@@ -117,7 +117,7 @@ void setup() {
   while (wifiMulti.run() != WL_CONNECTED) // Oczekiwanie na nawiązanie połączenia
     delay(100);
   
-  timeSync(TZ_INFO, "pool.ntp.org", "time.nis.gov"); //Synchronizacja czasu
+  timeSync(TZ_INFO, "time.coi.pw.edu.pl"); //Synchronizacja czasu
 
   // Sprawdzenie polaczenia z baza danych
   if (client.validateConnection())
